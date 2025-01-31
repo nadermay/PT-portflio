@@ -1,20 +1,20 @@
 :root {
   --lightgray: #D9D9D9;
   --gray: #9c9c9c;
-  --purple: #44007a;
+  --purple: #970b19;
   --darkGrey: #1b1c1d;
   --infoCard: #656565;
   --planCard: linear-gradient(210.41deg, #E3170A 1.14%, #E63B2E 100.75%);
   --appColor: #fdf7f2;
   --promoColor:  aliceblue;
   --glow-text: #fff;
-  --glow-shadow-purple: #54306e66;
+  --glow-shadow-purple: #e598a866;
   --glow-shadow-gray: #38363966;
-  --glow-shadow-purple-plan: #54306ee6;
+  --glow-shadow-purple-plan: #3d1515e6;
   --glow-shadow-gray-plan: #383639d5;
   --certificate: #edd66f;
   --card-color: #5f5c60b9;
-  --glow-shadow-purple-sm-icon: rgba(82, 51, 100, 0.893);
+  --glow-shadow-purple-sm-icon: rgba(228, 129, 129, 0.893);
   --mobile-menu: #fdf7f2f2;
 }
 
@@ -57,7 +57,7 @@
 
 
 .blur {
-  background: rgba(55, 14, 96, 0.713);
+  background: rgba(239, 95, 95, 0.713);
   position: absolute;
   /* circle shape */
   border-radius: 50%; 

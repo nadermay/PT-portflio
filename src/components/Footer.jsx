@@ -11,9 +11,8 @@ const Footer = () => {
         <hr />
         <div className='footer-wrapper'>
             <div className="footer-icons-wrapper">
-                <FontAwesomeIcon icon={faLinkedin} className='footer-icon' />
-                <FontAwesomeIcon icon={faSquareInstagram} className='footer-icon' />
-                <FontAwesomeIcon icon={faSquareFacebook} className='footer-icon' />
+                <a href="https://www.instagram.com/nader.maay/" target="_blank" rel="noopener noreferrer"><FontAwesomeIcon icon={faSquareInstagram} className='footer-icon' /></a>
+                <a href="https://www.facebook.com/nader.may.969/?locale=fr_FR" target="_blank" rel="noopener noreferrer"><FontAwesomeIcon icon={faSquareFacebook} className='footer-icon' /></a>
                 <FontAwesomeIcon icon={faTiktok} className='footer-icon' />
             </div>
             <div className="footer-logo">

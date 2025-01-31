@@ -28,19 +28,19 @@ const Motivation = () => {
                 <div>
                     <img src={check} alt="A checkmark bullet point" className='check' />
                     <span className='motivation-bullet'>
-                        Hundreds of satisfied customers
+                        +30 of satisfied customers
                     </span>
                 </div>
                 <div>
                     <img src={check} alt="A checkmark bullet point" className='check' />
                     <span className='motivation-bullet'>
-                        Expert Jiu-Jitsu coach
+                        Expert strength coach
                     </span>
                 </div>
                 <div>
                     <img src={check} alt="A checkmark bullet point" className='check' />
                     <span className='motivation-bullet'>
-                        1 free personalized program for new starters
+                        1 week program for new starters
                     </span>
                 </div>
                 <div>
@@ -50,14 +50,8 @@ const Motivation = () => {
                     </span>
                 </div>
             </div>
-            <span className="motivation-partners">
-                Partners
-            </span>
-            <div className="motivation-partners-list">
-                <img src={partner1} alt="Logo of the first partner" />
-                <img src={partner2} alt="Logo of the second partner" />
-                <img src={partner3} alt="Logo of the third partner" />
-            </div>
+           
+            
         </div>
     </div>
   )

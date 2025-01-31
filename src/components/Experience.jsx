@@ -29,7 +29,7 @@ const Experience = () => {
             <span>
                 <FontAwesomeIcon icon={faMedal} />
             </span>
-            <span>Martial Arts</span>
+            <span>Military Cardio</span>
         </div>
     </motion.div>
   )
