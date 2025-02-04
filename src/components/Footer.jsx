@@ -1,4 +1,4 @@
-import { faLinkedin, faSquareFacebook, faSquareInstagram, faTiktok } from '@fortawesome/free-brands-svg-icons';
+import { faSquareFacebook, faSquareInstagram, faWhatsapp } from '@fortawesome/free-brands-svg-icons';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import React from 'react';
 import { Link } from 'react-scroll';
@@ -13,7 +13,7 @@ const Footer = () => {
             <div className="footer-icons-wrapper">
                 <a href="https://www.instagram.com/nader.maay/" target="_blank" rel="noopener noreferrer"><FontAwesomeIcon icon={faSquareInstagram} className='footer-icon' /></a>
                 <a href="https://www.facebook.com/nader.may.969/?locale=fr_FR" target="_blank" rel="noopener noreferrer"><FontAwesomeIcon icon={faSquareFacebook} className='footer-icon' /></a>
-                <FontAwesomeIcon icon={faTiktok} className='footer-icon' />
+                <a href="https://wa.me/+21853275214" target="_blank" rel="noopener noreferrer"><FontAwesomeIcon icon={faWhatsapp} className='footer-icon' /></a>
             </div>
             <div className="footer-logo">
               <Link spy={true} span={'true'} smooth={true} to='hero'><img src={logoFooter} alt="Logo reads CJ Fitness Instructor" /></Link>

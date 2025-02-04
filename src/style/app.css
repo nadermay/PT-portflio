@@ -1,0 +1,52 @@
+/* Basic Reset */
+body, html {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+  }
+  
+  /* Container Styling */
+  .container {
+    text-align: center;
+  }
+  
+  /* Header */
+  .header {
+    background-color: #4CAF50;
+    color: white;
+    padding: 1rem;
+  }
+  
+  /* Flexbox for Content */
+  .content {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    padding: 1rem;
+  }
+  
+  .card {
+    background-color: #f4f4f4;
+    padding: 20px;
+    margin: 10px;
+    flex: 1 1 300px;
+    border-radius: 8px;
+  }
+  
+  /* Media Queries */
+  @media (max-width: 768px) {
+    .header h1 {
+      font-size: 1.5rem;
+    }
+    .card {
+      flex: 1 1 45%; /* Two cards per row on tablets */
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .card {
+      flex: 1 1 100%; /* One card per row on mobile */
+    }
+  }
+  
