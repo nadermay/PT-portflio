@@ -1,9 +1,6 @@
 import React from 'react';
 import motivation from '../assets/imgs/motivation.png';
 import check from '../assets/imgs/motivation-check.svg';
-import partner1 from '../assets/imgs/motivation-partner-logo-1.svg';
-import partner2 from '../assets/imgs/motivation-partner-logo-2.svg';
-import partner3 from '../assets/imgs/motivation-partner-logo-3.svg';
 import '../style/Motivation.css';
 
 const Motivation = () => {
