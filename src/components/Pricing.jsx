@@ -13,7 +13,7 @@ const Pricing = () => {
         <div className="pricing-header">
             <span>Begin </span>
             <span className='outline-text'>your journey </span>
-            <span>today</span>
+            <span>today with team Nader</span>
         </div>
         <div className="pricing-plans">
             {pricingData.map((plan, index) => (
