@@ -45,9 +45,11 @@
   },
   "devDependencies": {
     "@babel/plugin-proposal-private-property-in-object": "^7.21.11"
-  }, 
+  },
   "engines": {
-  "node": "18.x"
-}
+    "node": "18.x"
+  },
+    "presets": ["react-app"],
+    "plugins": ["@babel/plugin-proposal-private-property-in-object"]
+  }
 
-}
