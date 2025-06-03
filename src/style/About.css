@@ -1,0 +1,276 @@
+.about-section {
+  padding: 6rem 2rem;
+  background: var(--appColor);
+  position: relative;
+  overflow: hidden;
+}
+
+.about-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  position: relative;
+}
+
+.about-content {
+  background: var(--infoCard);
+  padding: 3rem;
+  border-radius: 20px;
+  box-shadow: 0 10px 30px var(--glow-shadow-gray);
+  color: var(--appColor);
+  backdrop-filter: blur(10px);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.about-content h2 {
+  font-size: 2.5rem;
+  color: var(--appColor);
+  margin-bottom: 2.5rem;
+  text-align: center;
+  text-transform: uppercase;
+  font-weight: bold;
+  position: relative;
+}
+
+.about-content h2::after {
+  content: "";
+  position: absolute;
+  bottom: -10px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 100px;
+  height: 3px;
+  background: linear-gradient(90deg, var(--purple), transparent);
+  border-radius: 2px;
+}
+
+.about-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 4rem;
+  margin-bottom: 3rem;
+}
+
+.about-text .bio {
+  font-size: 1.1rem;
+  line-height: 1.8;
+  color: var(--appColor);
+  margin-bottom: 2.5rem;
+  letter-spacing: 0.5px;
+  text-align: justify;
+}
+
+.expertise h3,
+.certifications h3 {
+  font-size: 1.5rem;
+  color: var(--appColor);
+  margin-bottom: 1.5rem;
+  text-transform: uppercase;
+  font-weight: bold;
+  position: relative;
+  display: inline-block;
+}
+
+.expertise h3::after,
+.certifications h3::after {
+  content: "";
+  position: absolute;
+  bottom: -5px;
+  left: 0;
+  width: 50%;
+  height: 2px;
+  background: var(--purple);
+  border-radius: 2px;
+}
+
+.expertise ul {
+  list-style: none;
+  padding: 0;
+}
+
+.expertise li {
+  padding: 1rem 0;
+  color: var(--appColor);
+  position: relative;
+  padding-left: 2rem;
+  letter-spacing: 0.5px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.expertise li:before {
+  content: "→";
+  color: var(--purple);
+  font-weight: bold;
+  position: absolute;
+  left: 0;
+  transition: transform 0.3s ease;
+}
+
+.expertise li:hover:before {
+  transform: translateX(5px);
+}
+
+.cert-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 1.5rem;
+}
+
+.cert-card {
+  background: rgba(255, 255, 255, 0.05);
+  padding: 1.5rem;
+  border-radius: 15px;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  transition: all 0.3s ease;
+}
+
+.cert-card:hover {
+  background: rgba(255, 255, 255, 0.1);
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+}
+
+.cert-icon {
+  font-size: 2rem;
+  color: var(--purple);
+  margin-bottom: 1rem;
+}
+
+.cert-card h4 {
+  color: var(--appColor);
+  font-size: 1.1rem;
+  margin-bottom: 0.5rem;
+}
+
+.cert-card p {
+  color: var(--appColor);
+  font-size: 0.9rem;
+  opacity: 0.8;
+  line-height: 1.6;
+}
+
+.cta-container {
+  display: flex;
+  gap: 1.5rem;
+  justify-content: center;
+  margin-top: 3rem;
+}
+
+.cta-button,
+.secondary-button {
+  padding: 1rem 2rem;
+  border-radius: 10px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  font-size: 1rem;
+}
+
+.cta-button {
+  background: var(--purple);
+  color: var(--appColor);
+  border: none;
+  box-shadow: 0 4px 15px rgba(151, 11, 25, 0.3);
+}
+
+.secondary-button {
+  background: transparent;
+  color: var(--appColor);
+  border: 2px solid var(--purple);
+}
+
+.cta-button:hover {
+  background: var(--glow-shadow-purple-plan);
+  transform: translateY(-2px);
+  box-shadow: 0 8px 20px rgba(151, 11, 25, 0.4);
+}
+
+.secondary-button:hover {
+  background: var(--purple);
+  transform: translateY(-2px);
+  box-shadow: 0 8px 20px rgba(151, 11, 25, 0.4);
+}
+
+.about-blur-left {
+  width: 22rem;
+  height: 14rem;
+  left: 0;
+  top: 0;
+  background: var(--glow-shadow-purple);
+}
+
+.about-blur-right {
+  width: 22rem;
+  height: 14rem;
+  right: 0;
+  top: 0;
+  background: var(--glow-shadow-purple);
+}
+
+@media (max-width: 1024px) {
+  .about-grid {
+    grid-template-columns: 1fr;
+    gap: 3rem;
+  }
+
+  .about-content {
+    padding: 2.5rem;
+  }
+
+  .cert-grid {
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  }
+}
+
+@media (max-width: 768px) {
+  .about-section {
+    padding: 4rem 1.5rem;
+  }
+
+  .about-content {
+    padding: 2rem;
+  }
+
+  .about-content h2 {
+    font-size: 2rem;
+  }
+
+  .cta-container {
+    flex-direction: column;
+    gap: 1rem;
+  }
+
+  .cta-button,
+  .secondary-button {
+    width: 100%;
+    text-align: center;
+  }
+}
+
+@media (max-width: 480px) {
+  .about-section {
+    padding: 3rem 1rem;
+  }
+
+  .about-content {
+    padding: 1.5rem;
+  }
+
+  .about-content h2 {
+    font-size: 1.8rem;
+  }
+
+  .about-text .bio {
+    font-size: 1rem;
+  }
+
+  .expertise h3,
+  .certifications h3 {
+    font-size: 1.3rem;
+  }
+
+  .cert-card {
+    padding: 1.2rem;
+  }
+}

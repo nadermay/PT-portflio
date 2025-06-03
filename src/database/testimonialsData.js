@@ -17,7 +17,7 @@ export const testinomialsData = [
     {
         img: testimonail3,
         review: 'This personal training service has been a game-changer! The flexibility in scheduling ensures that even with a hectic agenda, I can consistently engage in intense weightlifting sessions.',
-        name: 'ahmed',
+        name: 'mike',
         role: 'Bulking',
     }
 ];

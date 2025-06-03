@@ -1,0 +1,126 @@
+.highlights-container {
+  padding: 2rem 0;
+  margin-top: 2rem;
+}
+
+.highlights-header {
+  display: flex;
+  gap: 1rem;
+  font-size: 3rem;
+  font-weight: bold;
+  color: var(--purple);
+  text-transform: uppercase;
+  margin-bottom: 2rem;
+}
+
+.highlights-content {
+  display: flex;
+  gap: 3rem;
+  align-items: flex-start;
+}
+
+.highlights-tabs {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  flex: 1;
+}
+
+.highlight-tab {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  padding: 1rem 1.5rem;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  border: 2px solid transparent;
+}
+
+.highlight-tab:hover {
+  background-color: rgba(151, 11, 25, 0.05);
+}
+
+.highlight-tab.active {
+  background-color: rgba(151, 11, 25, 0.1);
+}
+
+.highlight-icon {
+  font-size: 1.5rem;
+}
+
+.highlight-title {
+  font-size: 1.2rem;
+  font-weight: 600;
+  color: var(--darkGrey);
+}
+
+.highlight-details {
+  flex: 2;
+  background: var(--infoCard);
+  padding: 2rem;
+  border-radius: 15px;
+  color: var(--appColor);
+  box-shadow: 0 10px 30px var(--glow-shadow-gray);
+}
+
+.highlight-details p {
+  font-size: 1.1rem;
+  line-height: 1.8;
+  margin-bottom: 2rem;
+  letter-spacing: 0.5px;
+}
+
+.learn-more-btn {
+  display: inline-block;
+  padding: 1rem 2rem;
+  border-radius: 8px;
+  color: var(--appColor);
+  text-decoration: none;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  transition: all 0.3s ease;
+}
+
+.learn-more-btn:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 5px 15px var(--glow-shadow-purple);
+}
+
+@media (max-width: 1024px) {
+  .highlights-header {
+    font-size: 2.5rem;
+    flex-direction: column;
+    gap: 0.5rem;
+  }
+
+  .highlights-content {
+    flex-direction: column;
+    gap: 2rem;
+  }
+
+  .highlights-tabs {
+    flex-direction: row;
+    overflow-x: auto;
+    padding-bottom: 1rem;
+  }
+
+  .highlight-tab {
+    min-width: 200px;
+  }
+}
+
+@media (max-width: 768px) {
+  .highlights-header {
+    font-size: 2rem;
+  }
+
+  .highlight-details {
+    padding: 1.5rem;
+  }
+
+  .highlight-details p {
+    font-size: 1rem;
+  }
+}

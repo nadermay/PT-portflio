@@ -1,135 +1,154 @@
 .hero-container {
-    display: flex;
-    justify-content: space-between;
-    margin-bottom: 4rem;
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 4rem;
+  padding: 2rem;
+  min-height: 100vh;
+  position: relative;
+  overflow: hidden;
 }
 
 .hero-blur {
-    width: 22rem;
-    height: 30rem;
-    left: 0;
-    
+  width: 22rem;
+  height: 30rem;
+  left: 0;
+  opacity: 0.7;
 }
 
 .left-hero {
-    padding: 1.5rem 2rem;
-    flex: 3;
-    display: flex;
-    gap: 2rem;
-    flex-direction: column;
-    z-index: 2;
+  padding: 1.5rem 2rem;
+  flex: 3;
+  display: flex;
+  gap: 2rem;
+  flex-direction: column;
+  z-index: 2;
+  max-width: 800px;
 }
 
 .right-hero {
-    flex: 1;
-    position: relative;
-    background-color: var(--purple);
-}
-
-.btn-main {
-    position: absolute;
-    right: 3rem;
-    top: 1.5rem;
-    color: var(--darkGrey);
-    cursor: pointer;
-    padding: 12px;
-}
-
-.btn-main:hover {
-    color: var(--purple);
+  flex: 1;
+  position: relative;
+  background-color: var(--purple);
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .certificate {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    gap: 0.3rem;
-    background-color: transparent;
-    width: fit-content;
-    padding: 1rem;
-    position: absolute;
-    right: 5rem;
-    top: 9rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 0.3rem;
+  background-color: transparent;
+  width: fit-content;
+  padding: 1rem;
+  position: absolute;
+  right: 5rem;
+  top: 9rem;
+  z-index: 3;
 }
 
 .hero-icon {
-    color: var(--certificate);
-    font-size: 3rem;    
+  color: var(--certificate);
+  font-size: 3rem;
 }
 
 .certificate > span {
-    color: var(--certificate);
-    font-size: 1rem;
-    letter-spacing: 0.1em;
+  color: var(--certificate);
+  font-size: 1rem;
+  letter-spacing: 0.1em;
+  text-align: center;
 }
 
 .hero-img {
-    position: absolute;
-    right: 14rem;
-    top: 4rem;
-    width: 32rem;
+  position: absolute;
+  right: 14rem;
+  top: 4rem;
+  width: 32rem;
+  max-width: 100%;
+  height: auto;
+  object-fit: contain;
+  z-index: 2;
 }
 
-/* large screens */
+/* Large screens */
 @media screen and (max-width: 1280px) {
-    .certificate {
-        display: none;
-    }
+  .hero-container {
+    padding: 1.5rem;
+  }
+
+  .certificate {
+    display: none;
+  }
+
+  .hero-img {
+    right: 10rem;
+    width: 28rem;
+  }
 }
 
-/* medium-small screens */
+/* Medium screens */
 @media screen and (max-width: 1024px) {
-    .hero-container {
-        flex-direction: column;
-    }
+  .hero-container {
+    flex-direction: column;
+    gap: 2rem;
+    padding: 1rem;
+  }
 
-    .hero-blur {
-        width: 14rem;
-    }
+  .hero-blur {
+    width: 14rem;
+    height: 20rem;
+  }
 
-    .right-hero {
-        position: relative;
-        background: none;
-    }
+  .left-hero {
+    padding: 1rem;
+    align-items: center;
+    text-align: center;
+  }
 
-    .btn-main {
-        position: absolute;
-        right: 6rem;
-        top: 10rem;
-        color: var(--darkGrey);
-        align-self: center;
-    }
+  .right-hero {
+    display: none;
+  }
 
-    .hero-img {
-        position: relative;
-        width: 22rem;
-        left: 5rem;
-        top: 12rem;
-        align-self: center;
-    }
+  .hero-img {
+    display: none;
+  }
 }
 
-/* sm screens */
+/* Tablet screens */
+@media screen and (max-width: 768px) {
+  .hero-container {
+    margin-bottom: 2rem;
+  }
+
+  .left-hero {
+    gap: 1.5rem;
+  }
+}
+
+/* Mobile screens */
 @media screen and (max-width: 540px) {
-    .hero-img {
-        left: 3rem;
-    }
+  .hero-container {
+    padding: 0.5rem;
+  }
+
+  .left-hero {
+    padding: 0.5rem;
+  }
 }
 
+/* Small mobile screens */
 @media screen and (max-width: 480px) {
-    .hero-img {
-        left: 1rem;
-    }
+  .hero-container {
+    margin-bottom: 1rem;
+  }
 }
 
-/* x-small screens */
-@media screen and (max-width: 480px) {
-    .btn-main {
-        right: 2rem;
-    }
-
-    .hero-img {
-        top: 14rem;
-    }
+/* Landscape mode */
+@media screen and (max-height: 600px) and (orientation: landscape) {
+  .hero-container {
+    min-height: auto;
+    padding: 1rem;
+  }
 }
